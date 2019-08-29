@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "thermionic",
+	"version": "0.1",
+	"content_scripts": [
+	   {
+		 "matches": ["https://www.youtube.com/*", "https://www.youtube.com/"],
+		 "js": ["/jquery-3.4.1.min.js", "/pagesave.js", "/themes.js", "/content.js"]
+	   }
+	],
+	"browser_action": {
+		"default_icon": "thermico.png"
+	},
+	"background" : {
+		"scripts" : ["background.js"]
+	},
+	"permissions": ["activeTab"]
+}
